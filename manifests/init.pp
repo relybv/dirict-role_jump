@@ -4,8 +4,6 @@
 #
 # === Parameters
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
 #
 class role_appl
 {
@@ -13,4 +11,6 @@ class role_appl
   include ::profile_base
   # include rspec monitor to make rspec acceptance test available to monitor system
   include ::profile_base::rspec_monitor
+  include ::profile_apache
+  include ::profile_apache::rspec_monitor
 }

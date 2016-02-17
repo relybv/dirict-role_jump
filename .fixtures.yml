@@ -4,8 +4,15 @@ fixtures:
 
 # role module layout, include profile base and ntp module
     profile_base: "https://github.com/relybv/dirict-profile_base.git"
+    profile_apache: "https://github.com/relybv/dirict-profile_apache.git"
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
+    apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
+    concat:
+      repo: "git://github.com/puppetlabs/puppetlabs-concat.git"
+      branch: "1.2.x"
+
+
 
   symlinks:
     role_appl: "#{source_dir}"

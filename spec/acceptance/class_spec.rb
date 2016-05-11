@@ -23,8 +23,14 @@ describe 'role_appl class' do
       end
     end
 
-       
-   # a role can include one ore more profiles, testing if work idempotently with no errors is sufficient
+   describe package('apache2') do
+     it { is_expected.to be_installed }
+   end
+
+   describe service('apache2') do
+     it { is_expected.to be_enabled }
+     it { is_expected.to be_running }
+   end
 
   end
 end

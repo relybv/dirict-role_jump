@@ -18,7 +18,7 @@ describe 'role_appl' do
        
           it { is_expected.to contain_class('profile_base') }
 
-          it { is_expected.to contain_apache__vhost('foo.example.com non-ssl').with( 'ssl' => false, 'redirect_status' => 'permanent' ) }
+          it { is_expected.to contain_apache__vhost('foo.example.com non-ssl').with( 'ssl' => false ) }
           it { is_expected.to contain_apache__vhost('foo.example.com ssl').with( 'ssl' => true ) }
 
           it { is_expected.to contain_apache__listen('80') }  

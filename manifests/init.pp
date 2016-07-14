@@ -11,6 +11,6 @@ class role_appl
   include ::profile_base
   # include rspec monitor to make rspec acceptance test available to monitor system
   include ::profile_base::rspec_monitor
-  # include profile jumphost
+  # include profile jumphost (empty)
   include ::profile_jumphost
 }
